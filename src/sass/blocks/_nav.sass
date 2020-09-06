@@ -1,0 +1,53 @@
+.nav
+    &__block
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-top: 7px
+        margin-bottom: 8px
+    &__info
+        display: flex
+        align-items: center
+    &__contacts
+        display: flex
+        flex-direction: column
+        margin-right: 30px
+        text-align: right
+    &__address
+        +mLight
+        font-size: 13px
+        color: $text-color
+        margin-bottom: 9px
+    &__phone
+        +mBold
+        font-size: 20px
+        color: $text-color
+        text-decoration: none
+.button
+    +mBold
+    font-size: 13px
+    color: $text-color
+    background-color: $main-color
+    padding: 18px 30px
+    border-radius: 10px
+    border: none
+    cursor: pointer
+    &:focus
+        outline: none
+@media ( min-width: 769px )
+    .button
+        &:hover
+            background-color: lighten($main-color, 10%)
+@media ( max-width: 768px )
+    .nav
+        &__block
+            margin-top: 18px
+            margin-bottom: 18px
+        &__img
+            width: 91px
+        &__contacts
+            display: none
+        &__button
+            font-size: 10px
+            padding: 15px 26px
+            border-radius: 5px
