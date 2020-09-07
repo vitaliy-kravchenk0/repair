@@ -514,6 +514,7 @@ template {
 
 .header__item-image {
   width: 20px;
+  height: 20px;
 }
 
 .header__item-text {
