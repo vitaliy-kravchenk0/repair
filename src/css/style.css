@@ -379,6 +379,36 @@ template {
   }
 }
 
+.button {
+  font-family: "Museo Sans Bold", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  color: #333333;
+  background-color: #ffd200;
+  padding: 18px 30px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.input {
+  font-family: "Museo Sans Light", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  padding: 26px 60px 26px 26px;
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+}
+
+.input:focus {
+  outline: none;
+  border: 1px solid #ffd200;
+}
+
 .nav__block {
   display: flex;
   justify-content: space-between;
@@ -413,22 +443,6 @@ template {
   font-size: 20px;
   color: #333333;
   text-decoration: none;
-}
-
-.button {
-  font-family: "Museo Sans Bold", sans-serif;
-  font-weight: 700;
-  font-size: 13px;
-  color: #333333;
-  background-color: #ffd200;
-  padding: 18px 30px;
-  border-radius: 10px;
-  border: none;
-  cursor: pointer;
-}
-
-.button:focus {
-  outline: none;
 }
 
 @media (min-width: 769px) {
@@ -542,14 +556,14 @@ template {
 
 @media (max-width: 1200px) {
   .header__title {
-    font-size: 27px;
+    font-size: 25px;
     line-height: 40px;
   }
   .header__subtitle {
-    font-size: 13px;
+    font-size: 12px;
   }
   .header__item-text {
-    max-width: 233px;
+    max-width: 220px;
   }
 }
 
@@ -590,5 +604,158 @@ template {
   }
   .block-right {
     padding-left: 0;
+  }
+}
+
+.free-design {
+  background: url("../img/free-design/bcg-left.jpg"), url("../img/free-design/bcg-right.png");
+  background-position: left center, right center;
+  background-size: 50%, contain;
+  background-repeat: repeat-y, no-repeat;
+}
+
+.free-design__block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.free-design__left-block {
+  flex-basis: 50%;
+}
+
+.free-design__right-block {
+  flex-basis: 50%;
+  opacity: 0.4;
+}
+
+.free-design__margin {
+  display: flex;
+  flex-direction: column;
+  margin-top: 84px;
+  margin-bottom: 92px;
+  margin-right: 90px;
+}
+
+.free-design__top-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.free-design__title {
+  font-family: "Museo Sans Bold", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333333;
+  max-width: 350px;
+  margin-bottom: 25px;
+}
+
+.free-design__subtitle {
+  font-family: "Museo Sans Light", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #333333;
+  max-width: 235px;
+  margin-bottom: 30px;
+}
+
+.free-design__input-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.free-design__button {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.free-design__bottom-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.free-design__call {
+  font-family: "Museo Sans Light", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: #333333;
+  line-height: 20px;
+  max-width: 210px;
+}
+
+.free-design__phone {
+  font-family: "Museo Sans Bold", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #333333;
+  text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  .free-design__input-block {
+    flex-direction: column;
+  }
+  .free-design__input {
+    margin-bottom: 15px;
+  }
+  .free-design__button {
+    font-size: 15px;
+  }
+  .free-design__bottom-text {
+    flex-direction: column;
+  }
+  .free-design__call {
+    max-width: 349px;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 992px) {
+  .free-design {
+    background: none;
+  }
+  .free-design__right-block {
+    display: none;
+  }
+  .free-design__left-block {
+    flex-basis: 100%;
+  }
+  .free-design__margin {
+    margin-right: 0;
+  }
+  .free-design__title {
+    max-width: none;
+    font-size: 28px;
+  }
+  .free-design__subtitle {
+    max-width: none;
+  }
+  .free-design__bottom-text {
+    flex-direction: row;
+  }
+  .free-design__call {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .free-design__title {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  .free-design__subtitle {
+    font-size: 14px;
+  }
+  .free-design__bottom-text {
+    flex-direction: column;
+  }
+  .free-design__call {
+    max-width: 210px;
+    font-size: 15px;
   }
 }

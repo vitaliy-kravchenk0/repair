@@ -13,3 +13,23 @@
     .container
         max-width: 584px
         width: 90%
+.button
+    +mBold
+    font-size: 13px
+    color: $text-color
+    background-color: $main-color
+    padding: 18px 30px
+    border-radius: 10px
+    border: none
+    cursor: pointer
+    &:focus
+        outline: none
+.input
+    +mLight
+    font-size: 15px
+    padding: 26px 60px 26px 26px
+    border-radius: 10px
+    border: 1px solid #dddddd
+    &:focus
+        outline: none
+        border: 1px solid $main-color

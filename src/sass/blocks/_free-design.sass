@@ -1,0 +1,103 @@
+.free-design
+    background: url("../img/free-design/bcg-left.jpg"), url("../img/free-design/bcg-right.png")
+    background-position: left center, right center
+    background-size: 50%, contain
+    background-repeat: repeat-y, no-repeat
+    back
+    &__block
+        display: flex
+        justify-content: space-between
+    &__left-block
+        flex-basis: 50%
+    &__right-block
+        flex-basis: 50%
+        opacity: 0.4
+    &__margin
+        display: flex
+        flex-direction: column
+        margin-top: 84px
+        margin-bottom: 92px
+        margin-right: 90px
+    &__top-text
+        display: flex
+        flex-direction: column
+    &__title
+        +mBold
+        font-size: 24px
+        line-height: 32px
+        color: $text-color
+        max-width: 350px
+        margin-bottom: 25px
+    &__subtitle
+        +mLight
+        font-size: 16px
+        color: $text-color
+        max-width: 235px
+        margin-bottom: 30px
+    &__input-block
+        display: flex
+        justify-content: space-between
+        margin-bottom: 30px
+    &__button
+        font-size: 16px
+        text-align: center
+        margin-bottom: 30px
+    &__bottom-text
+        display: flex
+        justify-content: space-between
+    &__call
+        +mLight
+        font-size: 15px
+        color: $text-color
+        line-height: 20px
+        max-width: 210px
+    &__phone
+        +mBold
+        font-size: 15px
+        color: $text-color
+        text-decoration: none
+@media ( max-width: 1200px )
+    .free-design
+        &__input-block
+            flex-direction: column
+        &__input
+            margin-bottom: 15px
+        &__button
+            font-size: 15px
+        &__bottom-text
+            flex-direction: column
+        &__call
+            max-width: 349px
+            font-size: 14px
+            margin-bottom: 5px
+@media ( max-width: 992px )
+    .free-design
+        background: none
+        &__right-block
+            display: none
+        &__left-block
+            flex-basis: 100%
+        &__margin
+            margin-right: 0
+        &__title
+            max-width: none
+            font-size: 28px
+        &__subtitle
+            max-width: none
+        &__bottom-text
+            flex-direction: row
+        &__call
+            font-size: 13px
+@media ( max-width: 768px )
+    .free-design
+        &__title
+            font-size: 18px
+            line-height: 20px
+            margin-bottom: 20px
+        &__subtitle
+            font-size: 14px
+        &__bottom-text
+            flex-direction: column
+        &__call
+            max-width: 210px
+            font-size: 15px
