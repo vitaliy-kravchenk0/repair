@@ -758,4 +758,8 @@ template {
     max-width: 210px;
     font-size: 15px;
   }
+  .free-design__margin {
+    margin-top: 53px;
+    margin-bottom: 56px;
+  }
 }
