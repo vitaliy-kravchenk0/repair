@@ -409,11 +409,24 @@ template {
   border: 1px solid #ffd200;
 }
 
+.title-block {
+  text-align: center;
+}
+
 .title {
   font-family: "Museo Sans Bold", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 40px;
+  margin: 0 auto;
+}
+
+.subtitle {
+  font-family: "Museo Sans Light", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: #000;
+  margin: 0 auto;
 }
 
 .nav__block {
@@ -830,6 +843,130 @@ template {
 @media (max-width: 768px) {
   .portfolio__title {
     max-width: 270px;
+  }
+}
+
+.price {
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+.price__title {
+  max-width: 510px;
+  margin-bottom: 60px;
+}
+
+.price__subtitle {
+  display: inline-block;
+  margin-bottom: 60px;
+}
+
+.price-blocks {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.price-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #e8e8e8;
+  margin-bottom: 30px;
+}
+
+.price-block:hover {
+  box-shadow: 0px 20px 25px 0px rgba(0, 0, 0, 0.1);
+  border: 1 solid rgba(255, 255, 255, 0.01);
+  transition: 0.2s;
+}
+
+.price__img {
+  display: block;
+}
+
+.price__img-block {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.price__img-block::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0;
+}
+
+.price__img-block:hover::after {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.price__name {
+  margin-bottom: 30px;
+  font-family: "Museo Sans Light", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #000;
+}
+
+.price__discover {
+  margin-bottom: 45px;
+  font-family: "Museo Sans Bold", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #333333;
+  text-decoration: none;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.price__discover::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0px;
+  bottom: -2px;
+  height: 3px;
+  width: 100%;
+  background-color: #ffd200;
+  z-index: -1;
+  transition: 0.2s;
+}
+
+.price__discover:hover::after {
+  height: 11px;
+}
+
+@media (max-width: 768px) {
+  .price {
+    padding-top: 52px;
+    padding-bottom: 27px;
+  }
+  .price__title {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 25px;
+  }
+  .price__img-block {
+    margin-bottom: 30px;
+  }
+  .price__name {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .price__discover {
+    margin-bottom: 28px;
+  }
+  .price__img {
+    max-width: 288px;
   }
 }
 

@@ -1,0 +1,88 @@
+.price
+    padding-top: 100px
+    padding-bottom: 80px
+    &__title
+        max-width: 510px
+        margin-bottom: 60px
+    &__subtitle
+        display: inline-block
+        margin-bottom: 60px
+    &-blocks
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+    &-block
+        display: flex
+        flex-direction: column
+        align-items: center
+        border: 1px solid #e8e8e8
+        margin-bottom: 30px
+        &:hover
+            box-shadow: 0px 20px 25px 0px rgba(0, 0, 0, 0.1)
+            border: 1 solid rgba(#fff, 0.01)
+            transition: 0.2s
+    &__img
+        display: block
+    &__img-block
+        margin-bottom: 40px
+        position: relative
+        &::after
+           content: ''
+           position: absolute
+           left: 0
+           top: 0
+           width: 100%
+           height: 100%
+           background: linear-gradient(to top, rgb(255,210,0) 0%, rgba(255,255,255,0) 100%)
+           opacity: 0
+        &:hover
+            &::after
+                opacity: 1
+                transition: 0.2s
+    &__name
+        margin-bottom: 30px
+        +mLight
+        font-size: 18px
+        color: #000
+    &__discover
+        margin-bottom: 45px
+        +mBold
+        font-size: 16px
+        color: $text-color
+        text-decoration: none
+        border: none
+        background: none
+        outline: none
+        cursor: pointer
+        position: relative
+        &::after
+            content: ''
+            display: block
+            position: absolute
+            left: 0px
+            bottom: -2px
+            height: 3px
+            width: 100%
+            background-color: $main-color
+            z-index: -1
+            transition: 0.2s
+        &:hover
+            &::after
+                height: 11px
+@media ( max-width: 768px )
+    .price
+        padding-top: 52px
+        padding-bottom: 27px
+        &__title
+            font-size: 18px
+            line-height: 22px
+            margin-bottom: 25px
+        &__img-block
+            margin-bottom: 30px
+        &__name
+            font-size: 14px
+            margin-bottom: 15px
+        &__discover
+            margin-bottom: 28px
+        &__img
+            max-width: 288px
