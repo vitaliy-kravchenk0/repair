@@ -968,6 +968,9 @@ template {
   .price__img {
     max-width: 288px;
   }
+  .price__subtitle {
+    font-size: 14px;
+  }
 }
 
 /* Slider */
