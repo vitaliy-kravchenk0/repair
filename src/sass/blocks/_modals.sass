@@ -59,6 +59,7 @@
         padding: 80px 100px 76px 100px
         background-color: #fff
         text-align: center
+        position: relative
     &__title
         font-size: 22px
         color: $text-color
@@ -94,6 +95,11 @@
         +mBold
         font-size: 24px
         color: $text-color
+.close-block
+    position: absolute
+    top: 10px
+    right: 10px
+    cursor: pointer
 @media ( max-width: 1200px )
     .modals
         &-blocks
@@ -117,3 +123,5 @@
             &__title
                 font-size: 18px
                 line-height: 25px
+            &__subtitle
+                font-size: 15px

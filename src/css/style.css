@@ -770,7 +770,7 @@ template {
   .free-design__title {
     margin: 0 auto;
     text-align: center;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 20px;
     margin-bottom: 20px;
   }
@@ -1079,6 +1079,7 @@ template {
   padding: 80px 100px 76px 100px;
   background-color: #fff;
   text-align: center;
+  position: relative;
 }
 
 .modals-blocks__title {
@@ -1132,6 +1133,13 @@ template {
   color: #333333;
 }
 
+.close-block {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
 @media (max-width: 1200px) {
   .modals-blocks {
     max-width: 90%;
@@ -1162,6 +1170,9 @@ template {
   .modals-blocks__title {
     font-size: 18px;
     line-height: 25px;
+  }
+  .modals-blocks__subtitle {
+    font-size: 15px;
   }
 }
 
