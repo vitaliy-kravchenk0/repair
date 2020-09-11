@@ -66,9 +66,12 @@
             background-color: $main-color
             z-index: -1
             transition: 0.2s
-        &:hover
-            &::after
-                height: 11px
+@media ( min-width: 993px )
+    .price
+        &__discover
+            &:hover
+                &::after
+                    height: 11px
 @media ( max-width: 768px )
     .price
         padding-top: 52px

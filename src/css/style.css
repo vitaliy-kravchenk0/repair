@@ -953,8 +953,10 @@ template {
   transition: 0.2s;
 }
 
-.price__discover:hover::after {
-  height: 11px;
+@media (min-width: 993px) {
+  .price__discover:hover::after {
+    height: 11px;
+  }
 }
 
 @media (max-width: 768px) {
