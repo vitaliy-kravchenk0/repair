@@ -998,6 +998,11 @@ template {
   display: none;
   justify-content: center;
   align-items: center;
+  display: none;
+}
+
+.modals__dblock {
+  display: flex;
 }
 
 .modals__left-top {
