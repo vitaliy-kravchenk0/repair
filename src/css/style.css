@@ -1073,6 +1073,7 @@ template {
 .modals-blocks__left {
   padding: 80px 113px 75px 79px;
   background-color: #f7f7f7;
+  border-radius: 10px 0 0 10px;
 }
 
 .modals-blocks__right {
@@ -1080,6 +1081,7 @@ template {
   background-color: #fff;
   text-align: center;
   position: relative;
+  border-radius: 0 10px 10px 0;
 }
 
 .modals-blocks__title {
@@ -1140,6 +1142,10 @@ template {
   cursor: pointer;
 }
 
+.close {
+  width: 16px;
+}
+
 @media (max-width: 1200px) {
   .modals-blocks {
     max-width: 90%;
@@ -1166,6 +1172,7 @@ template {
   }
   .modals-blocks__right {
     padding: 40px 25px 40px 25px;
+    border-radius: 10px;
   }
   .modals-blocks__title {
     font-size: 18px;
