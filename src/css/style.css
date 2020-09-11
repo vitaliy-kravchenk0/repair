@@ -603,14 +603,18 @@ template {
 
 @media (max-width: 768px) {
   .header__title {
+    margin: 0 auto;
+    text-align: center;
     font-size: 21px;
     margin-bottom: 13px;
     line-height: 28px;
   }
   .header__subtitle {
-    font-size: 14px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 11px;
     margin-bottom: 28px;
-    max-width: 240px;
+    max-width: 260px;
   }
   .header__item-text {
     font-size: 12px;
@@ -764,19 +768,27 @@ template {
 
 @media (max-width: 768px) {
   .free-design__title {
+    margin: 0 auto;
+    text-align: center;
     font-size: 18px;
     line-height: 20px;
     margin-bottom: 20px;
   }
   .free-design__subtitle {
+    margin: 0 auto;
+    text-align: center;
     font-size: 14px;
+    margin-bottom: 30px;
   }
   .free-design__bottom-text {
     flex-direction: column;
   }
   .free-design__call {
-    max-width: 210px;
-    font-size: 15px;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 225px;
+    font-size: 16px;
+    margin-top: 15px;
   }
   .free-design__margin {
     margin-top: 53px;
@@ -951,7 +963,7 @@ template {
     padding-bottom: 27px;
   }
   .price__title {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 22px;
     margin-bottom: 25px;
   }
@@ -969,7 +981,185 @@ template {
     max-width: 288px;
   }
   .price__subtitle {
-    font-size: 14px;
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+}
+
+.modals {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modals__left-top {
+  display: flex;
+  flex-direction: column;
+}
+
+.modals__items {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.modals__top-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 28px;
+}
+
+.modals__title {
+  font-family: "Museo Sans Bold", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.modals__title::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #ffd200;
+  position: absolute;
+  bottom: -10px;
+}
+
+.modals__list {
+  padding-left: 0;
+}
+
+.modals__list-item {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.modals__text {
+  font-family: "Museo Sans Light", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.modals__item-text {
+  margin-left: 14px;
+  font-family: "Museo Sans Light", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.modals__bottom-title {
+  font-family: "Museo Sans Bold", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 40px;
+}
+
+.modals-blocks {
+  display: flex;
+}
+
+.modals-blocks__left {
+  padding: 80px 113px 75px 79px;
+  background-color: #f7f7f7;
+}
+
+.modals-blocks__right {
+  padding: 80px 100px 76px 100px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.modals-blocks__title {
+  font-size: 22px;
+  color: #333333;
+  max-width: 300px;
+  line-height: 32px;
+  text-align: center;
+  margin: 0 auto 38px auto;
+}
+
+.modals-blocks__subtitle {
+  display: inline-block;
+  font-size: 16px;
+  color: #333333;
+  margin: 0 auto 40px auto;
+}
+
+.modals-blocks__input-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.modals-blocks__input {
+  margin-bottom: 15px;
+}
+
+.modals-blocks__button {
+  width: 100%;
+  margin-top: 30px;
+  font-size: 16px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.modals-blocks__call {
+  font-family: "Museo Sans Light", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: #333333;
+  display: block;
+  max-width: 300px;
+  margin: 30px auto 10px auto;
+}
+
+.modals-blocks__tel {
+  text-decoration: none;
+  font-family: "Museo Sans Bold", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #333333;
+}
+
+@media (max-width: 1200px) {
+  .modals-blocks {
+    max-width: 90%;
+  }
+  .modals-blocks__right {
+    padding: 80px 50px 40px 50px;
+  }
+  .modals-blocks__title {
+    line-height: 30px;
+    font-size: 19px;
+    margin-bottom: 25px;
+  }
+  .modals-blocks__subtitle {
+    margin-bottom: 27px;
+  }
+}
+
+@media (max-width: 992px) {
+  .modals-blocks {
+    max-width: 95%;
+  }
+  .modals-blocks__left {
+    display: none;
+  }
+  .modals-blocks__right {
+    padding: 40px 25px 40px 25px;
+  }
+  .modals-blocks__title {
+    font-size: 18px;
+    line-height: 25px;
   }
 }
 

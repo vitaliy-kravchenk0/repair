@@ -1,0 +1,119 @@
+.modals
+    background-color: rgba(#000, 0.5)
+    width: 100%
+    height: 100%
+    position: fixed
+    top: 0
+    left: 0
+    display: none
+    justify-content: center
+    align-items: center
+    &__left-top
+        display: flex
+        flex-direction: column
+    &__items
+        display: flex
+        margin-bottom: 15px
+    &__top-text
+        display: flex
+        flex-direction: column
+        margin-left: 28px
+    &__title
+        +mBold
+        font-size: 16px
+        position: relative
+        margin-bottom: 20px
+        &::after
+            content: ''
+            display: block
+            width: 40px
+            height: 2px
+            background-color: $main-color
+            position: absolute
+            bottom: -10px
+    &__list
+        padding-left: 0
+    &__list-item
+        list-style: none
+        display: flex
+        align-items: center
+        margin-bottom: 8px
+    &__text
+        +mLight
+        font-size: 16px
+    &__item-text
+        margin-left: 14px
+        +mLight
+        font-size: 14px
+    &__bottom-title
+        +mBold
+        font-size: 14px
+        display: inline-block
+        margin-top: 40px
+.modals-blocks
+    display: flex
+    &__left
+        padding: 80px 113px 75px 79px
+        background-color: #f7f7f7
+    &__right
+        padding: 80px 100px 76px 100px
+        background-color: #fff
+        text-align: center
+    &__title
+        font-size: 22px
+        color: $text-color
+        max-width: 300px
+        line-height: 32px
+        text-align: center
+        margin: 0 auto 38px auto
+    &__subtitle
+        display: inline-block
+        font-size: 16px
+        color: $text-color
+        margin: 0 auto 40px auto
+    &__input-block
+        display: flex
+        flex-direction: column
+    &__input
+        margin-bottom: 15px
+    &__button
+        width: 100%
+        margin-top: 30px
+        font-size: 16px
+        padding-top: 22px
+        padding-bottom: 22px
+    &__call
+        +mLight
+        font-size: 15px
+        color: $text-color
+        display: block
+        max-width: 300px
+        margin: 30px auto 10px auto
+    &__tel
+        text-decoration: none
+        +mBold
+        font-size: 24px
+        color: $text-color
+@media ( max-width: 1200px )
+    .modals
+        &-blocks
+            max-width: 90%
+            &__right
+                padding: 80px 50px 40px 50px
+            &__title
+                line-height: 30px
+                font-size: 19px
+                margin-bottom: 25px
+            &__subtitle
+                margin-bottom: 27px
+@media ( max-width: 992px )
+    .modals
+        &-blocks
+            max-width: 95%
+            &__left
+                display: none
+            &__right
+                padding: 40px 25px 40px 25px
+            &__title
+                font-size: 18px
+                line-height: 25px
