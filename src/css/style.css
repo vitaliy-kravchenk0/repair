@@ -1176,6 +1176,27 @@ template {
   }
 }
 
+@media (max-width: 768px) {
+  .modals-block__input {
+    padding: 16px 60px 16px 16px;
+  }
+  .modals-block__button {
+    margin-top: 15px;
+    font-size: 15px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .modals-block__title {
+    margin-bottom: 20px;
+  }
+  .modals-block__subtitle {
+    margin-bottom: 20px;
+  }
+  .modals-block__tel {
+    font-size: 20px;
+  }
+}
+
 /* Slider */
 .slick-slider {
   position: relative;
